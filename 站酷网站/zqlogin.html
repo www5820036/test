@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+        body{
+        	background-image: url('images/bg01.jpg');
+        	background-size: 100% 100%;
+        	background-repeat: no-repeat;
+        	
+        }
+        .logo1{
+            position: absolute;
+            top: 60px;
+            left: 44%;
+            margin-left: 10px;
+        }
+       /*  .toptop{
+            margin: 80px auto;
+            width: 500px;
+            height: 30px;
+            border: 1px solid #ccc;
+            text-align: center;
+        } */
+
+        .logo2{
+            font-size: 20px;
+            position: absolute;
+            color: white;
+            top: 100px;
+            left: 30%;
+        }
+
+        .logoleft{
+            position: absolute;
+            left: 130px;
+            top: 30px;
+        }
+       /*  .logoleft img{
+            margin-top: 10px;
+        } */
+        .logoleft span{
+            font-size: 24px;
+            color: white;
+            position: relative;
+            top: -3px;
+
+        }
+		.box{
+			height: 500px;
+			width: 400px;
+			margin: 150px auto;
+			/* border: 2px solid #ccc; */
+			background-color: white;
+			position: relative;
+            border-radius: 5px;
+		}
+		li{
+			list-style: none;
+		}
+        .rightt{
+        	position: absolute;
+        	right: 3px;
+        	top: 5px;
+        }
+		.body{
+			width: 350px;
+			height: 450px;
+			margin: 30px auto;
+			
+		}
+
+		.top {
+			margin-left: 5px;
+			width: 340px;
+			height: 45px;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.top ul{
+			overflow: hidden;
+		}
+        
+       
+		.top ul .li1{
+			height: 37px;
+			width: 72px;
+			display: inline-block;
+			float: left;
+			margin: 7px;
+			border-bottom: 2px solid black;
+			font-size: 16px;
+		}
+        
+        .top ul .li2{
+			height: 37px;
+			width: 72px;
+			display: inline-block;
+			float: left;
+			margin: 7px;
+			margin-left: 20px;
+			font-size: 16px;
+			color: #ccc;
+		}
+
+		form{
+			margin-top: 40px;
+			width: 100%;
+			height: 240px;
+		}
+        
+        [type="text"]{
+        	width:330px;
+        	height: 40px;
+        	margin: 10px auto;
+        	margin-left: 7px;
+        	border-radius: 10px; 
+        	border: 1px solid #ccc;
+        	padding-left: 15px;
+        	box-sizing: border-box;
+        	outline: none;
+        	background-color: #f4f4f4;
+        }
+        [type="text"]:hover {
+           background-color: white;
+        }
+        [type="password"]:hover {
+           background-color: white;
+        }
+         [type="password"]{
+        	width:330px;
+        	height: 40px;
+        	margin: 10px auto;
+        	margin-left: 7px;
+        	border-radius: 10px; 
+        	border: 1px solid #ccc;
+        	padding-left: 15px;
+        	outline: none;
+        	box-sizing: border-box;
+        	background-color: #f4f4f4;
+        }
+         [type="button"]{
+        	width:330px;
+        	height: 40px;
+        	margin: 10px auto;
+        	margin-left: 7px;
+        	border-radius: 10px; 
+        	border: 1px solid #ccc;
+        	outline: none;
+        	box-sizing: border-box;
+        	background-color: #ffe300;
+        }
+        [type="checkbox"]{
+        	margin: 0px 8px 0px 8px;
+        }
+        .right{
+        	float: right;
+        	color: #ccc;
+        	margin-right: 15px;
+        }
+        .right a{
+        	text-decoration: none;
+        	color: #ccc;
+        	font-size: 14px;
+        }
+        b{
+        	font-size: 14px;
+        	font-weight: normal;
+        }
+
+        .footer{
+        	width: 200px;
+        	height: 100px;
+        	margin: 10px auto;
+        	text-align: center;
+        }
+        .footer span{
+        	display: block;
+             font-size: 14px;
+             color: #ccc;
+             text-align: center;
+        }
+        .footer a{
+        	margin-top: 15px;
+        	display: inline-block;
+        	height: 40px;
+        	width: 40px;
+        	border-radius: 50%;
+        	background-color: #ccc;
+        	/* background-image: url('images/wechat.png'); */
+        	background-repeat: no-repeat;
+        	background-position: center;
+        }
+        .footer .a1{
+        	background-image: url('images/wechat.png');
+        }
+        .footer .a2{
+        	background-image: url('images/weibo.png');
+        }
+        .footer .a3{
+        	background-image: url('images/qq.png');
+        }
+
+        .footer .a1:hover{
+        	background-color: green;
+        }
+        .footer .a2:hover{
+        	background-color: red;
+        }
+        .footer .a3:hover{
+        	background-color: skyblue;
+        }
+
+        .bottom{
+            width: 600px;
+            height: 100px;
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            margin-left: -300px;
+            /* border: 1px solid #ccc; */
+            text-align: center;
+        }
+
+        .bottom a{
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        .bottom p{
+            color: white;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+	</style>
+</head>
+<body>
+    <a href="index.html"><img src="images/zclogo.svg" alt="" class="logo1"></a>
+    <div class="logoleft">
+    <img src="images/smlogo.svg" alt="" class="logo3" width="140px"><span>&nbsp;|&nbsp;通行证</span>
+    </div>  
+       <span class="logo2">登录站酷网，与820万+ 名设计创意人一起交流设计、分享快乐吧！</span>
+   
+	<div class="box">
+		<div class="rightt">
+			<img src="images/wx.svg" alt="">
+		</div>
+		<div class="body">
+			<div class="top">
+				<ul>
+					<li class="li1">密码登陆</li>
+					<li class="li2">短信登陆</li>
+				</ul>
+			</div>
+			<form action="#">
+				<input type="text" name="username" placeholder="手机号/邮箱" />
+				<input type="password" name="password" placeholder="密码" />
+				<input type="button" value="登录">
+				<input type="checkbox"><b>下次自动登录</b>
+				<div class="right">
+					<a href="#">忘记密码</a>
+					&nbsp;|&nbsp;
+					<a href="#">注册</a>
+				</div>
+			</form>
+			<div class="footer">
+				<span>第三方账号登陆</span>
+					<a href="#" class="a1"></a>
+					<a href="#" class="a2"></a>
+					<a href="#" class="a3"></a>
+				
+			</div>
+		</div>
+	</div>
+    <div class="bottom">
+        <a href="">图片来自站酷海洛</a>
+        <p>京ICP备11017824号-4 / 京ICP证130164号 北京市公安局朝阳分局备案编号:110105000501<br>
+                      Copyright © 2006-2018 ZCOOL 中文 English</p>
+    </div>
+</body>
+</html>

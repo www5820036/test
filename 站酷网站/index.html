@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+
+	
+	<header>
+		<div class="box">
+		<div class="logo"><img src="images/logo.svg" alt="" width="130px"></div>
+			<ul class="ul">
+				<li class="li">
+					<a href="index.html" class="a1">首页</a>
+				</li>
+				<li class="li">
+					<a href="find.html" class="a2">发现</a>
+					<div class="nav">
+						<ul>
+							<li><span><a href="">平面</a></span></li>
+							<li><span><a href="">UI</a></span></li>
+							<li><span><a href="">网页</a></span></li>
+							<li><span><a href="">插画</a></span></li>
+							<li><span><a href="">动漫</a></span></li>
+							<li><span><a href="">摄影</a></span></li>
+							<li><span><a href="">空间</a></span></li>
+							<li><span><a href="">平面</a></span></li>
+							<li><span><a href="">UI</a></span></li>
+							<li><span><a href="">网页</a></span></li>
+							<li><span><a href="">插画</a></span></li>
+							<li><span><a href="">动漫</a></span></li>
+							<li><span><a href="">摄影</a></span></li>
+							<li><span><a href="">空间</a></span></li>
+						</ul>
+						<hr>
+						
+							<ol>
+								<li><a href="#">精选作品 》</a></li>
+								<li><a href="#">精选文章 》</a></li>
+								<li><a href="#">精选收藏 》</a></li>
+							</ol>
+						
+					</div>
+				</li>
+				<li class="li">
+					<a href="city.html" class="a2">同城</a>
+				</li>
+				<li class="li">
+					<a href="recruit.html" class="a2">职位</a>
+					<div class="nav1">
+						<ul>
+							<li><a href="#">职位</a></li>
+							<li><a href="#">公司</a></li>
+							<li><a href="#">发布职位</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="activity.html" class="a2">活动</a>
+					<div class="nav2">
+						<ul>
+							<li><a href="#">设计大赛</a></li>
+							<li><a href="#">专题策划</a></li>
+							<li><a href="#">线上活动</a></li>
+							<li><a href="#">线下活动</a></li>
+							<li><a href="#">学习音频</a></li>
+						</ul>
+					</div>
+				</li >
+				<li class="li">
+					<a href="index.html" class="a2">素材</a>
+					<div class="nav3">
+						<ul>
+							<li><a href="#">图片</a></li>
+							<li><a href="#">视频</a></li>
+							<li><a href="#">字体</a></li>
+							<li><a href="#">音乐</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="index.html" class="a2">课程</a>
+					<div class="nav4">
+						<ul>
+							<li><a href="#">正在热销</a></li>
+							<li><a href="#">口碑好课</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="index.html" class="a2">· · ·</a>
+					<div class="nav5">
+						<ul>
+							<li><a href="#">榜单</a></li>
+							<li><a href="#">设计师</a></li>
+							<li><a href="#">站酷APP</a></li>
+							<li><a href="#">站酷字体</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="search"><img src="images/search.svg" alt="" width="20px"></div>
+			<div class="upload"><i><img src="images/upload.svg" alt="" width="20px"></i></div>
+
+			<div class="right">
+				<span><a href="zqlogin.html">登录 |</a></span>
+				<span><a href="">注册</a></span>
+			</div>
+		</div>
+	</header>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script>
+		$('.ul li').hover(function() {
+			$(this).children('.nav,.nav1,.nav2,.nav3,.nav4,.nav5').show()
+		}, function() {
+			$(this).children('.nav,.nav1,.nav2,.nav3,.nav4,.nav5').hide()
+		});
+	</script>
+	<div class="banner">
+		<div class="auto">
+			<ul class="lunbo">
+				<li><img src="images/lunbo1.png@1380w" alt=""></li>
+				<li><img src="images/lunbo2.png@1380w" alt=""></li>
+				<li><img src="images/lunbo3.jpg@1380w" alt=""></li>
+                <li><img src="images/lunbo4.png@1380w" alt=""></li>
+				<li><img src="images/lunbo5.png@1380w" alt=""></li>
+				<li><img src="images/lunbo1.png@1380w" alt=""></li>			
+			</ul>
+			<span class="left"><</span>
+			<span class="right1">></span>
+		</div>
+		<script>
+			var i=1100
+			var n=0
+
+
+			 $('.left').click(function(event) {
+			n++;
+			if(n>5){
+				$('.lunbo').css('margin-left', '0px');
+				n=1
+			}
+			$('.lunbo').stop().animate({'margin-left':-n*i+'px'}, 1000);
+			
+		});
+
+			 $('.right1').click(function(event) {
+			n--;
+			if(n<0){
+				$('.lunbo').css('margin-left', -5*i+'px');
+				n=4
+			}
+			$('.lunbo').stop().animate({'margin-left':-n*i+'px'}, 1000);
+			
+		});
+               
+           var timer;
+           function go(){
+           	clearInterval(timer)
+           	timer=setInterval(function(){
+           		n++;
+			    if(n>5){
+				$('.lunbo').css('margin-left', '0px');
+				n=1
+			}
+			$('.lunbo').stop().animate({'margin-left':-n*i+'px'}, 1000);
+           	},2000)
+           }
+           go();
+
+           $('.auto').hover(function() {
+			clearInterval(timer)
+		}, function() {
+			go()
+		});
+		</script>
+
+		<div class="lie">
+			<ul>
+				<li><img src="images/01.jpg" alt="" width="203px"></li>
+                <li><img src="images/02.jpg" alt="" width="203px"></li>
+                <li><img src="images/03.jpg" alt="" width="203px"></li>
+                <li><img src="images/04.jpg" alt="" width="203px"></li>
+                <li><img src="images/05.jpg" alt="" width="203px"></li>
+			</ul>
+		</div>
+
+		<div class="bottom1">
+			<ul>
+				<li class="li">首页推荐</li>
+				<li class="li">最新发布</li>
+				<li class="li">上升最快</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		var y=$('.bottom1').offset().top
+		$(window).scroll(function(event) {
+			var h=$(window).scrollTop()
+			
+			
+			console.log(h)
+
+            if(h>=y){
+            	$('.bottom1').css('position', 'fixed');
+            }else{
+            	$('.bottom1').css('position', '');
+            }
+		});      
+				
+	</script>
+	<div class="content">
+
+		<ul class="lis">
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con25.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+		    <li class="li">
+				<a href="#" class="pic"><img src="images/con01.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con02.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con03.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con04.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con05.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con06.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con07.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con08.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con09.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con10.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con11.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con12.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con13.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con14.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con15.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con16.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con17.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con18.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con19.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con20.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con21.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con22.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con23.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+			<li class="li">
+				<a href="#" class="pic"><img src="images/con24.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			</li>
+		</ul>
+          <!--  <script>
+           	$('.name22').hover(function() {
+           		$('.show1').show(500)
+           	}, function() {
+           		$('.show1').hide(500)
+           	});
+           </script> -->
+		<ol>
+			<li class="n1"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">···</a></li>
+			<li><a href="#">99</a></li>
+			<li><a href="#">100</a></li>
+			<li><a href="#">></a></li>
+		</ol>
+
+		<a href="#" class="gg"><img src="images/gg.jpg" alt="" width="1140px"></a>
+		<div class="bottom">
+			<div class="top1">
+				<span id="left">推荐课程</span>
+				<span id="right"><p>换一换</p></span>
+				
+			</div>
+			<ul class="ul11">
+				<li>
+					<img src="images/bo1.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo2.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo3.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo4.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo5.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo6.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo7.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo8.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo9.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo10.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo11.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo12.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo13.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo14.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo15.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo1.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo2.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo3.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo4.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+				<li>
+					<img src="images/bo5.jpg" alt="" width="210px">
+					<a href="#">版式设计的应用方法</a>
+				</li>
+			</ul>
+			<script>
+					var k=1140
+			        var m=0
+
+
+			       $('#right').click(function(event) {
+			           m++;
+				     if(m>3){
+					  $('.ul11').css('margin-left', '0px');
+					  m=1
+				      }
+				   // console.log(m)
+			      $('.ul11').stop().animate({'margin-left':-m*k+'px'}, 1000);
+					
+		            });
+				</script>
+		</div>
+
+		<!-- <script>
+			var c=$('.bottom').offset().top
+		$(window).scroll(function(event) {
+			var h=$(window).scrollTop()
+			
+			
+			console.log(h)
+
+            if(h>=c){
+            	$('.content .bottom').slideDown(200);
+            }else{
+            	$('.content .bottom').sildeUp(200);
+            }
+		});  
+		</script> -->
+		<div class="gotop">
+		<img src="images/go.png" alt="">
+	</div>
+	<script>
+		$(window).scroll(function(event) {
+			var h=$(window).scrollTop()
+			console.log(h)
+			if(h>200){
+				$('.gotop').fadeIn()
+			}else{
+				$('.gotop').fadeOut()
+			}
+            
+            if(h>1850){
+            	$('.gotop').css('position', 'absolute');
+            }else{
+            	$('.gotop').css('position', 'fixed');
+            }
+		});
+
+		$('.gotop').click(function(event) {
+			    var h=$(window).scrollTop()
+				if(h>400){
+				$('html,body').animate({'scrollTop':0+'px'},500)
+                }
+          });      
+				
+	</script>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="top">
+			<ul>
+				<li><img src="images/phone.svg" alt="" height="15px">&nbsp;&nbsp;移动版</li>
+				<li>关于我们</li>
+				<li>加入站酷</li>
+				<li>用户协议</li>
+				<li>隐私政策</li>
+				<li>侵权申诉</li>
+				<li>企业服务</li>
+				<li>帮助中心</li>
+				<li>联系我们</li>
+				<li>中文</li>
+				<li>English</li>
+			</ul>
+
+            <span class="iconfont icon-weibo"></span>
+            <span class="iconfont icon-jianzhuanquan-"></span>
+            <!-- <b class="b1"><img src="images/weixin.svg" alt=""></b>
+            <b class="b2"><img src="images/wb.svg" alt=""></b> -->
+        </div>
+        <div class="fobottom">
+        	<ol>
+        		<li><a href="#">京ICP备11017821号-4</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">京ICP110121号</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><img src="images/police.png" alt=""> <a href="">京公网安备11203040501号</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">不良信息举报电话：010-888888</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">网络文化经营许可证 京网文[2016]6173-844号</a></li>
+        		<li><a href="#">网上有害信息举报专区 </a></li>
+                <li><a href="#">网络文化经营许可证 京网文[2016]6173-844号</a>&nbsp;&nbsp;&nbsp;|</li>
+                <li><a href="#">不良信息举报电话：010-888888</a>&nbsp;&nbsp;&nbsp;|</li>
+                <li><a href="#">举报邮箱 jubao@zcool.com.cn</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">联系电话010-55555555</a>&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#">Copyright © 2006-2019 ZCOOL站酷</a></li>
+        	</ol>
+        </div>
+		</div>
+	</footer>
+</body>
+</html>

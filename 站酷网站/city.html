@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>同城</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/city.css">
+</head>
+<body>
+	<header>
+		<div class="box">
+		<div class="logo"><img src="images/logo.svg" alt="" width="130px"></div>
+			<ul class="ul">
+				<li class="li">
+					<a href="index.html" class="a2">首页</a>
+				</li>
+				<li class="li">
+					<a href="find.html" class="a2">发现</a>
+					<div class="nav">
+						<ul>
+							<li><span><a href="">平面</a></span></li>
+							<li><span><a href="">UI</a></span></li>
+							<li><span><a href="">网页</a></span></li>
+							<li><span><a href="">插画</a></span></li>
+							<li><span><a href="">动漫</a></span></li>
+							<li><span><a href="">摄影</a></span></li>
+							<li><span><a href="">空间</a></span></li>
+							<li><span><a href="">平面</a></span></li>
+							<li><span><a href="">UI</a></span></li>
+							<li><span><a href="">网页</a></span></li>
+							<li><span><a href="">插画</a></span></li>
+							<li><span><a href="">动漫</a></span></li>
+							<li><span><a href="">摄影</a></span></li>
+							<li><span><a href="">空间</a></span></li>
+						</ul>
+						<hr>
+						
+							<ol>
+								<li><a href="#">精选作品 》</a></li>
+								<li><a href="#">精选文章 》</a></li>
+								<li><a href="#">精选收藏 》</a></li>
+							</ol>
+						
+					</div>
+				</li>
+				<li class="li">
+					<a href="city.html" class="a1">同城</a>
+				</li>
+				<li class="li">
+					<a href="recruit.html" class="a2">职位</a>
+					<div class="nav1">
+						<ul>
+							<li><a href="#">职位</a></li>
+							<li><a href="#">公司</a></li>
+							<li><a href="#">发布职位</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="activity.html" class="a2">活动</a>
+					<div class="nav2">
+						<ul>
+							<li><a href="#">设计大赛</a></li>
+							<li><a href="#">专题策划</a></li>
+							<li><a href="#">线上活动</a></li>
+							<li><a href="#">线下活动</a></li>
+							<li><a href="#">学习音频</a></li>
+						</ul>
+					</div>
+				</li >
+				<li class="li">
+					<a href="index.html" class="a2">素材</a>
+					<div class="nav3">
+						<ul>
+							<li><a href="#">图片</a></li>
+							<li><a href="#">视频</a></li>
+							<li><a href="#">字体</a></li>
+							<li><a href="#">音乐</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="index.html" class="a2">课程</a>
+					<div class="nav4">
+						<ul>
+							<li><a href="#">正在热销</a></li>
+							<li><a href="#">口碑好课</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="index.html" class="a2">· · ·</a>
+					<div class="nav5">
+						<ul>
+							<li><a href="#">榜单</a></li>
+							<li><a href="#">设计师</a></li>
+							<li><a href="#">站酷APP</a></li>
+							<li><a href="#">站酷字体</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="search"><img src="images/search.svg" alt="" width="20px"></div>
+			<div class="upload"><i><img src="images/upload.svg" alt="" width="20px"></i></div>
+
+			<div class="right">
+				<span><a href="zqlogin.html">登录 |</a></span>
+				<span><a href="">注册</a></span>
+			</div>
+		</div>
+	</header>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script>
+		$('.ul li').hover(function() {
+			$(this).children('.nav,.nav1,.nav2,.nav3,.nav4,.nav5').show()
+		}, function() {
+			$(this).children('.nav,.nav1,.nav2,.nav3,.nav4,.nav5').hide()
+		});
+
+	</script>
+
+	<div class="topbg">
+		<a href="#" class="citytext"><img src="images/citybgtext.svg" alt=""></a>
+		<div class="bg">
+			<img src="images/citybg.jpg" alt="">
+			<div class="bgtext">
+				<div class="bgdate">
+					<div class="bgdate1">
+						<span>人气</span>
+						<p>2325678</p>
+					</div>
+					<div class="bgdate1">
+						<span>创作</span>
+						<p>1107452</p>
+					</div>
+					<div class="bgdate2">
+						
+						<p>北京</p>
+					</div>
+					<div class="bgdate1">
+						<span>设计师</span>
+						<p>825678</p>
+					</div>
+					<div class="bgdate1">
+						<span>生活圈</span>
+						<p>14050</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="topnav">
+		<div class="topnavbox">
+			<div class="topnavleft">
+				<p>北京</p>
+				<span>选择城市</span>
+			</div>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">创作</a></li>
+				<li><a href="#">生活圈</a></li>
+				<li><a href="#">设计师</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="contenttop">
+				<div class="contenttopleft">
+					<span>创作</span>
+					<a href="#" class="a1">编辑精选</a>
+					<a href="#" class="a2">最近发布</a>
+					<a href="#" class="a3">更多&nbsp;&nbsp;></a>
+				</div>
+				<div class="contenttopright">
+					<div class="r1"><span class="iconfont icon-shangchuan"></span></div>
+					<div class="r2"><span class="iconfont icon-mingpian"></span></div>
+					<div class="r3"><span class="iconfont icon-xingqiu"></span></div>
+                    <script>
+                    	var a='<span class="iconfont icon-shangchuan"></span>'
+                        var b='<span class="iconfont icon-mingpian"></span>'
+                        var c='<span class="iconfont icon-xingqiu"></span>'
+
+                    	$('.r1').hover(function() {
+                    		$('.r1').css('background-color', '#ffe300');
+                    		$(this).text('上传作品');
+                    	}, function() {
+                    		$('.r1').css('background-color', 'white');
+                    		$(this).text('');
+                    		$(this).append(a);
+                    	});
+                    	$('.r2').hover(function() {
+                    		$('.r2').css('background-color', '#ffe300');
+                    		$(this).text('发布职位');
+                    	}, function() {
+                    		$('.r2').css('background-color', 'white');
+                    		$(this).text('');
+                    		$(this).append(b);
+                    	});
+                    	$('.r3').hover(function() {
+                    		$('.r3').css('background-color', '#ffe300');
+                    		$(this).text('发生活圈');
+                    	}, function() {
+                    		$('.r3').css('background-color', 'white');
+                    		$(this).text('');
+                    		$(this).append(c);
+                    	});
+                    </script>
+				</div>
+
+			</div>
+			<div class="ctmidleft">
+			 <ul class="lis">
+    		     <li class="li">
+				<a href="#" class="pic"><img src="images/con25.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p><span class="iconfont icon-huo1"></span>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name2.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name2.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			     </li>
+			     <li class="li">
+				<a href="#" class="pic"><img src="images/con11.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p><span class="iconfont icon-huo1"></span>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name2.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name2.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			     </li>
+			     <li class="li">
+				<a href="#" class="pic"><img src="images/con12.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p><span class="iconfont icon-huo1"></span>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name2.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name2.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			     </li>
+			     <li class="li">
+				<a href="#" class="pic"><img src="images/con13.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p><span class="iconfont icon-huo1"></span>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name2.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name2.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			     </li>
+			     <li class="li">
+				<a href="#" class="pic"><img src="images/con06.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p><span class="iconfont icon-huo1"></span>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name2.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name2.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			     </li>
+			     <li class="li">
+				<a href="#" class="pic"><img src="images/con05.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p><span class="iconfont icon-huo1"></span>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name2.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name2.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			     </li>
+			     <li class="li">
+				<a href="#" class="pic"><img src="images/con40.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p><span class="iconfont icon-huo1"></span>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name2.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name2.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			     </li>
+			     <li class="li">
+				<a href="#" class="pic"><img src="images/con38.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p><span class="iconfont icon-huo1"></span>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name2.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name2.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			     </li>
+			     <li class="li">
+				<a href="#" class="pic"><img src="images/con34.jpg" alt="" width="210px"></a>
+				<p class="tit">陈绽：平凡之物的异样之美</p><span class="iconfont icon-huo1"></span>
+				<p class="sty">文章-专访-多领域</p>
+
+				<span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+				<hr>
+				<span class="name22">
+					<a href="#" class="name"><img src="images/name2.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+					</a>
+					<div class="show1">
+						<div class="toptop">
+							<div class="toptop1">
+							<img src="images/name2.jpg" alt="" width="40px" class="ppp"><h4>设计师专访</h4><img src="images/show.svg" alt="" width="15px" class="bbb"><br>
+							<p>北京 | 设计爱好者</p>
+                            </div>
+                            <button>关注</button>
+						</div>
+                       <div class="footot">
+                       	<ul>
+                       		<li><img src="images/show01.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show02.jpg" alt="" width="105px"></li>
+                       		<li><img src="images/show03.jpg" alt="" width="105px"></li>
+                       	</ul>
+                       	  <span class="see1"><img src="images/eye.svg" alt=""> 666666&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 10000&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 4333</span>
+                       </div>
+
+				</div>
+			    </span>
+				<p class="right">1天前</p>
+			     </li>
+			 </ul>
+			</div>
+
+
+
+
+
+
+			<div class="ctmidright">
+				<div class="ctmidrighttop">
+					<p>热门生活圈</p>
+				</div>
+                   <div class="ctmidrightmid">
+                    <div class="ctmidrightmidleft">
+                    	<img src="images/ctmr01.jpg" alt="">
+                    </div>
+                    <div class="mdmd">
+                    		<a href="#">安娜画师</a>
+                    		<p>4天前</p>
+                    </div>
+                    <div class="btbt">关注</div>
+                    	
+                   </div>
+                   <div class="midimg">
+                    	<ul>
+                    		<li>
+                    			<img src="images/ctmra.jpg" alt="">
+                    		</li>
+                    		<li>
+                    			<img src="images/ctmrb.jpg" alt="">
+                    		</li>
+                    		<li>
+                    			<img src="images/ctmrc.jpg" alt="">
+                    		</li>
+                    		<li>
+                    			<img src="images/ctmrd.jpg" alt="">
+                    		</li>
+                    		<li>
+                    			<img src="images/ctmre.jpg" alt="">
+                    		</li>
+                    	</ul>
+                    	<div class="left">
+                    		<span class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-"></span>
+                    		</div>
+                    		<div class="right">
+                    			<span class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-1"></span>
+                    		</div>
+                    	<script>
+                    	var n=0
+                    		$('.left').click(function(event) {
+                    			n++;
+                    			console.log(n)
+                    			$('.midimg ul li').eq(n).show().siblings('li').hide()
+
+                    			if(n>4){
+                    				$('.midimg ul li').eq(0).show().siblings('li').hide()
+                    				n=0;
+                    				   // $('.left').hide();
+                    			}	
+                    			});
+
+
+                            $('.right').click(function(event) {
+                    			n--;
+                    			console.log(n)
+                    			$('.midimg ul li').eq(n).show().siblings('li').hide()
+
+                    			if(n<0){
+                    				n=5
+                    			}	
+                    			
+                                // if(n=0){
+                                // 	$('.right').hide();}
+
+                                   });
+
+	
+
+                                
+			 
+                    	</script>
+
+                    </div>
+                    <div class="midimgft">
+                    	<div class="midimgftbox">
+                    	<a href="#"><img src="images/ctmr02.jpg" alt="" width="30px"></a>
+                    	<a href="#"><img src="images/ctmr03.jpg" alt="" width="30px"></a>
+                    	<p>等6人点赞</p>
+                    	<span><img src="images/dz.png" alt=""></span>
+                    </div>
+                    </div>
+
+                    <div class="midimgftt">
+                    	<a href="#">十八十七</a><b>裙子真好看呀</b><br>
+                    	<a href="#">一半窗</a><b>清新可爱</b>
+                    	<br>
+                    	<a href="#">安娜画师</a><b>有喜欢的小伙伴吗</b>
+                    </div>
+                    <div class="ctmidbot">
+                    	<a href="#">查看更多</a>
+                    </div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+				<div class="sucai">
+					<div class="sucaitop">
+						<p>素材</p>
+						<a href="#">更多 ></a>
+					</div>
+					<ul>
+						<li><img src="images/sucai1.jpg" alt=""></li>
+						<li><img src="images/sucai2.jpg" alt=""></li>
+						<li><img src="images/sucai3.jpg" alt=""></li>
+						<li><img src="images/sucai4.jpg" alt=""></li>
+						<li><img src="images/sucai5.jpg" alt=""></li>
+						<li><img src="images/sucai6.jpg" alt=""></li>
+						<li><img src="images/sucai7.jpg" alt=""></li>
+						<li><img src="images/sucai8.jpg" alt=""></li>
+					</ul>
+				</div>
+
+
+
+				<div class="ranking">
+					<div class="rankingtop">
+						<div class="div1"><a href="#">热门作品</a></div>
+						<div class="div2"><a href="#">人气设计师</a></div>
+					</div>
+					<div class="rankingmid">
+						<div class="num"><a>1</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank01.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='当纸品的美好登上 中国日报 CHINA DAILY 首页头版 '>当纸品的美好登上 中国日报 CHINA DAILY 首页头版 </a>
+							<span>插画</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname.jpg" alt=""></a>
+							<a href="#" class="name" title='纸品的美好孙杨'>纸品的美好孙杨</a>
+							<span>5天前</span>
+						</div>
+					</div>
+					<div class="rankingmid">
+						<div class="num"><a>2</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank02.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='「FOREVER UP」2019作品集'>[FOREVER UP]2019作品集 </a>
+							<span>UI</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname01.jpg" alt=""></a>
+							<a href="#" class="name" title='聪明脑花'>聪明脑花</a>
+							<span>3天前</span>
+						</div>
+					</div>
+					
+					<div class="rankingmid">
+						<div class="num"><a>3</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank03.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='个人作品集'>个人作品集</a>
+							<span>UI</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname02.jpg" alt=""></a>
+							<a href="#" class="name" title='NAMO张浩'>NAMO张浩</a>
+							<span>3天前</span>
+						</div>
+					</div>
+					<div class="rankingmid">
+						<div class="num"><a>4</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank04.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='《Son of light》'>[Son of light]</a>
+							<span>平面</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname02.jpg" alt=""></a>
+							<a href="#" class="name" title='NAMO张浩'>NAMO张浩</a>
+							<span>3天前</span>
+						</div>
+					</div>
+					<div class="rankingmid">
+						<div class="num"><a>5</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank05.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='《Son of light》'>[Son of light]</a>
+							<span>平面</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname02.jpg" alt=""></a>
+							<a href="#" class="name" title='NAMO张浩'>NAMO张浩</a>
+							<span>3天前</span>
+						</div>
+					</div>
+					<div class="rankingmid">
+						<div class="num"><a>6</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank06.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='《Son of light》'>[Son of light]</a>
+							<span>平面</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname02.jpg" alt=""></a>
+							<a href="#" class="name" title='NAMO张浩'>NAMO张浩</a>
+							<span>3天前</span>
+						</div>
+					</div>
+					<div class="rankingmid">
+						<div class="num"><a>7</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank07.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='《Son of light》'>[Son of light]</a>
+							<span>平面</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname02.jpg" alt=""></a>
+							<a href="#" class="name" title='NAMO张浩'>NAMO张浩</a>
+							<span>3天前</span>
+						</div>
+					</div>
+					<div class="rankingmid">
+						<div class="num"><a>8</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank08.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='《Son of light》'>[Son of light]</a>
+							<span>平面</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname02.jpg" alt=""></a>
+							<a href="#" class="name" title='NAMO张浩'>NAMO张浩</a>
+							<span>3天前</span>
+						</div>
+					</div>
+					<div class="rankingmid">
+						<div class="num"><a>9</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank09.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='《Son of light》'>[Son of light]</a>
+							<span>平面</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname02.jpg" alt=""></a>
+							<a href="#" class="name" title='NAMO张浩'>NAMO张浩</a>
+							<span>3天前</span>
+						</div>
+					</div>
+					<div class="rankingmid">
+						<div class="num"><a>10</a></div>
+						<div class="img">
+							<a href="#"><img src="images/rank10.jpg" alt=""></a>
+						</div>
+						<div class="ranktitle">
+							<a href="#" title='《Son of light》'>[Son of light]</a>
+							<span>平面</span>
+						</div>
+						<div class="rankname">
+							<a href="#" class="img"><img src="images/rankname02.jpg" alt=""></a>
+							<a href="#" class="name" title='NAMO张浩'>NAMO张浩</a>
+							<span>3天前</span>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="recruit">
+					<div class="retop">
+						<span>职位</span>
+						<a href="#">更多 ></a>
+					</div>
+					<div class="rect">
+						<div class="recttop">
+							<div class="releft">
+								<a href="#">(资深动态视觉设计师)平面方向</a>
+								<span>15k-20k / 经验3-5年 / 本科</span>
+							</div>
+							<div class="reright">
+								<a class="aimg"><img src="images/rect01.jpg" alt=""></a>
+								<a href="#" class="con">月蚀文化发展(北京)有限公司</a>
+								<span>艺术/文化娱乐/成长型(A轮)</span>
+							</div>
+						</div>
+						<div class="rectft">
+							<span class="rectftleft">希望认识更多圈子里的朋友们</span>
+							<div class="spbox">
+							<span class="sp1">领导好</span>
+							<span class="sp1">尊重设计</span>
+							<span class="sp1">弹性工作</span>
+							</div>
+						</div>
+					</div>
+					<div class="rect">
+						<div class="recttop">
+							<div class="releft">
+								<a href="#">(资深动态视觉设计师)平面方向</a>
+								<span>15k-20k / 经验3-5年 / 本科</span>
+							</div>
+							<div class="reright">
+								<a class="aimg"><img src="images/rect02.jpg" alt=""></a>
+								<a href="#" class="con">月蚀文化发展(北京)有限公司</a>
+								<span>艺术/文化娱乐/成长型(A轮)</span>
+							</div>
+						</div>
+						<div class="rectft">
+							<span class="rectftleft">希望认识更多圈子里的朋友们</span>
+							<div class="spbox">
+							<span class="sp1">领导好</span>
+							<span class="sp1">尊重设计</span>
+							<span class="sp1">弹性工作</span>
+							</div>
+						</div>
+					</div>
+					<div class="rect">
+						<div class="recttop">
+							<div class="releft">
+								<a href="#">(资深动态视觉设计师)平面方向</a>
+								<span>15k-20k / 经验3-5年 / 本科</span>
+							</div>
+							<div class="reright">
+								<a class="aimg"><img src="images/rect03.jpg" alt=""></a>
+								<a href="#" class="con">月蚀文化发展(北京)有限公司</a>
+								<span>艺术/文化娱乐/成长型(A轮)</span>
+							</div>
+						</div>
+						<div class="rectft">
+							<span class="rectftleft">希望认识更多圈子里的朋友们</span>
+							<div class="spbox">
+							<span class="sp1">领导好</span>
+							<span class="sp1">尊重设计</span>
+							<span class="sp1">弹性工作</span>
+							</div>
+						</div>
+					</div>
+					<div class="rect">
+						<div class="recttop">
+							<div class="releft">
+								<a href="#">(资深动态视觉设计师)平面方向</a>
+								<span>15k-20k / 经验3-5年 / 本科</span>
+							</div>
+							<div class="reright">
+								<a class="aimg"><img src="images/rect04.jpg" alt=""></a>
+								<a href="#" class="con">月蚀文化发展(北京)有限公司</a>
+								<span>艺术/文化娱乐/成长型(A轮)</span>
+							</div>
+						</div>
+						<div class="rectft">
+							<span class="rectftleft">希望认识更多圈子里的朋友们</span>
+							<div class="spbox">
+							<span class="sp1">领导好</span>
+							<span class="sp1">尊重设计</span>
+							<span class="sp1">弹性工作</span>
+							</div>
+						</div>
+					</div>
+					<div class="rect">
+						<div class="recttop">
+							<div class="releft">
+								<a href="#">(资深动态视觉设计师)平面方向</a>
+								<span>15k-20k / 经验3-5年 / 本科</span>
+							</div>
+							<div class="reright">
+								<a class="aimg"><img src="images/rect05.jpg" alt=""></a>
+								<a href="#" class="con">月蚀文化发展(北京)有限公司</a>
+								<span>艺术/文化娱乐/成长型(A轮)</span>
+							</div>
+						</div>
+						<div class="rectft">
+							<span class="rectftleft">希望认识更多圈子里的朋友们</span>
+							<div class="spbox">
+							<span class="sp1">领导好</span>
+							<span class="sp1">尊重设计</span>
+							<span class="sp1">弹性工作</span>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+		</div>
+		<div class="gotop">
+		<img src="images/go.png" alt="">
+	    </div>
+	    <script>
+		$(window).scroll(function(event) {
+			var h=$(window).scrollTop()
+			console.log(h)
+			if(h>200){
+				$('.gotop').fadeIn()
+			}else{
+				$('.gotop').fadeOut()
+			}
+            
+            if(h>2100){
+            	$('.gotop').css('position', 'absolute');
+            }else{
+            	$('.gotop').css('position', 'fixed');
+            }
+		});
+
+		$('.gotop').click(function(event) {
+			    var h=$(window).scrollTop()
+				if(h>400){
+				$('html,body').animate({'scrollTop':0+'px'},500)
+                }
+          });      
+				
+	</script>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="top">
+			<ul>
+				<li><img src="images/phone.svg" alt="" height="15px">&nbsp;&nbsp;移动版</li>
+				<li>关于我们</li>
+				<li>加入站酷</li>
+				<li>用户协议</li>
+				<li>隐私政策</li>
+				<li>侵权申诉</li>
+				<li>企业服务</li>
+				<li>帮助中心</li>
+				<li>联系我们</li>
+				<li>中文</li>
+				<li>English</li>
+			</ul>
+
+            <span class="iconfont icon-weibo"></span>
+            <span class="iconfont icon-jianzhuanquan-"></span>
+            <!-- <b class="b1"><img src="images/weixin.svg" alt=""></b>
+            <b class="b2"><img src="images/wb.svg" alt=""></b> -->
+        </div>
+        <div class="fobottom">
+        	<ol>
+        		<li><a href="#">京ICP备11017821号-4</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">京ICP110121号</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><img src="images/police.png" alt=""> <a href="">京公网安备11203040501号</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">不良信息举报电话：010-888888</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">网络文化经营许可证 京网文[2016]6173-844号</a></li>
+        		<li><a href="#">网上有害信息举报专区 </a></li>
+                <li><a href="#">网络文化经营许可证 京网文[2016]6173-844号</a>&nbsp;&nbsp;&nbsp;|</li>
+                <li><a href="#">不良信息举报电话：010-888888</a>&nbsp;&nbsp;&nbsp;|</li>
+                <li><a href="#">举报邮箱 jubao@zcool.com.cn</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">联系电话010-55555555</a>&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#">Copyright © 2006-2019 ZCOOL站酷</a></li>
+        	</ol>
+        </div>
+		</div>
+	</footer>
+</body>
+</html>

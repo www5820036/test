@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>活动</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/activity.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+	<header>
+		<div class="box">
+		<div class="logo"><img src="images/logo.svg" alt="" width="130px"></div>
+			<ul class="ul">
+				<li class="li">
+					<a href="index.html" class="a2">首页</a>
+				</li>
+				<li class="li">
+					<a href="find.html" class="a2">发现</a>
+					<div class="nav">
+						<ul>
+							<li><span><a href="">平面</a></span></li>
+							<li><span><a href="">UI</a></span></li>
+							<li><span><a href="">网页</a></span></li>
+							<li><span><a href="">插画</a></span></li>
+							<li><span><a href="">动漫</a></span></li>
+							<li><span><a href="">摄影</a></span></li>
+							<li><span><a href="">空间</a></span></li>
+							<li><span><a href="">平面</a></span></li>
+							<li><span><a href="">UI</a></span></li>
+							<li><span><a href="">网页</a></span></li>
+							<li><span><a href="">插画</a></span></li>
+							<li><span><a href="">动漫</a></span></li>
+							<li><span><a href="">摄影</a></span></li>
+							<li><span><a href="">空间</a></span></li>
+						</ul>
+						<hr>
+						
+							<ol>
+								<li><a href="#">精选作品 》</a></li>
+								<li><a href="#">精选文章 》</a></li>
+								<li><a href="#">精选收藏 》</a></li>
+							</ol>
+						
+					</div>
+				</li>
+				<li class="li">
+					<a href="city.html" class="a2">同城</a>
+				</li>
+				<li class="li">
+					<a href="recruit.html" class="a2">职位</a>
+					<div class="nav1">
+						<ul>
+							<li><a href="#">职位</a></li>
+							<li><a href="#">公司</a></li>
+							<li><a href="#">发布职位</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="activity.html" class="a1">活动</a>
+					<div class="nav2">
+						<ul>
+							<li><a href="#">设计大赛</a></li>
+							<li><a href="#">专题策划</a></li>
+							<li><a href="#">线上活动</a></li>
+							<li><a href="#">线下活动</a></li>
+							<li><a href="#">学习音频</a></li>
+						</ul>
+					</div>
+				</li >
+				<li class="li">
+					<a href="index.html" class="a2">素材</a>
+					<div class="nav3">
+						<ul>
+							<li><a href="#">图片</a></li>
+							<li><a href="#">视频</a></li>
+							<li><a href="#">字体</a></li>
+							<li><a href="#">音乐</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="index.html" class="a2">课程</a>
+					<div class="nav4">
+						<ul>
+							<li><a href="#">正在热销</a></li>
+							<li><a href="#">口碑好课</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="index.html" class="a2">· · ·</a>
+					<div class="nav5">
+						<ul>
+							<li><a href="#">榜单</a></li>
+							<li><a href="#">设计师</a></li>
+							<li><a href="#">站酷APP</a></li>
+							<li><a href="#">站酷字体</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="search"><img src="images/search.svg" alt="" width="20px"></div>
+			<div class="upload"><i><img src="images/upload.svg" alt="" width="20px"></i></div>
+
+			<div class="right">
+				<span><a href="zqlogin.html">登录 |</a></span>
+				<span><a href="">注册</a></span>
+			</div>
+		</div>
+	</header>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script>
+		$('.ul li').hover(function() {
+			$(this).children('.nav,.nav1,.nav2,.nav3,.nav4,.nav5').show()
+		}, function() {
+			$(this).children('.nav,.nav1,.nav2,.nav3,.nav4,.nav5').hide()
+		});
+
+	</script>
+
+
+
+	<div class="topnav">
+		<ul>
+			<li><a href="#" class="a1">最新活动</a></li>
+			<li><a href="#" class="a2">设计大赛</a></li>
+			<li><a href="#" class="a2">专题策划</a></li>
+			<li><a href="#" class="a2">线上活动</a></li>
+			<li><a href="#" class="a2">线下活动</a></li>
+			<li><a href="#" class="a2">学习音频</a></li>
+		</ul>
+	</div>
+     <script>
+        	var y=$('.topnav').offset().top
+		$(window).scroll(function(event) {
+			var h=$(window).scrollTop()
+			
+			
+			console.log(h)
+
+            if(h>=y){
+            	$('.topnav').css('position', 'fixed');
+            }else{
+            	$('.topnav').css('position', '');
+            }
+		});     
+				
+	</script>
+	<div class="content">
+		<div class="container">
+			<ul class="uls">
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity01.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity02.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity03.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity04.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity05.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity06.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity07.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity08.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity09.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				<li class="lis">
+					<div class="img">
+						<img src="images/activity10.jpg" alt="" title='Ctrl+Z创力复原·Z+惠普能量赛'>
+						<div class="lefttop">
+							<p>设计大赛</p>
+						</div>
+					</div>
+ 					<div class="lismid">
+ 						<h4><a href="#">Ctrl+Z创力复原·Z+惠普能量赛</a></h4>
+                        <p>2019-11-26 – 2020-06-30</p>
+                        <span>距离截稿还有211天</span>
+ 					</div>
+ 					<div class="lisfoot">
+ 						<span class="spleft">
+ 							<img src="images/time.svg" alt="">5天
+ 						</span>
+
+ 						<span class="spright">
+ 							<a href="#"><img src="images/eye.svg" alt=""> 1737</a>
+ 							<a href="#"><img src="images/pp.svg" alt=""> 34</a>
+ 							<a href="#"><img src="images/picture.svg" alt=""> 16</a>
+ 						</span>
+
+ 					</div>
+
+
+
+				</li>
+				
+			</ul>
+
+
+
+			<ol>
+			<li class="n1"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">···</a></li>
+			<li><a href="#">99</a></li>
+			<li><a href="#">100</a></li>
+			<li><a href="#">></a></li>
+		</ol>
+		</div>
+		<div class="gotop">
+		<img src="images/go.png" alt="">
+	</div>
+         <script>
+		$(window).scroll(function(event) {
+			var h=$(window).scrollTop()
+			console.log(h)
+			if(h>200){
+				$('.gotop').fadeIn()
+			}else{
+				$('.gotop').fadeOut()
+			}
+            
+            if(h>1720){
+            	$('.gotop').css('position', 'absolute');
+            }else{
+            	$('.gotop').css('position', 'fixed');
+            }
+		});
+
+		$('.gotop').click(function(event) {
+			    var h=$(window).scrollTop()
+				if(h>400){
+				$('html,body').animate({'scrollTop':0+'px'},500)
+                }
+          });      
+				
+	</script>
+
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="top">
+			<ul>
+				<li><img src="images/phone.svg" alt="" height="15px">&nbsp;&nbsp;移动版</li>
+				<li>关于我们</li>
+				<li>加入站酷</li>
+				<li>用户协议</li>
+				<li>隐私政策</li>
+				<li>侵权申诉</li>
+				<li>企业服务</li>
+				<li>帮助中心</li>
+				<li>联系我们</li>
+				<li>中文</li>
+				<li>English</li>
+			</ul>
+
+            <span class="iconfont icon-weibo"></span>
+            <span class="iconfont icon-jianzhuanquan-"></span>
+            <!-- <b class="b1"><img src="images/weixin.svg" alt=""></b>
+            <b class="b2"><img src="images/wb.svg" alt=""></b> -->
+        </div>
+        <div class="fobottom">
+        	<ol>
+        		<li><a href="#">京ICP备11017821号-4</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">京ICP110121号</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><img src="images/police.png" alt=""> <a href="">京公网安备11203040501号</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">不良信息举报电话：010-888888</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">网络文化经营许可证 京网文[2016]6173-844号</a></li>
+        		<li><a href="#">网上有害信息举报专区 </a></li>
+                <li><a href="#">网络文化经营许可证 京网文[2016]6173-844号</a>&nbsp;&nbsp;&nbsp;|</li>
+                <li><a href="#">不良信息举报电话：010-888888</a>&nbsp;&nbsp;&nbsp;|</li>
+                <li><a href="#">举报邮箱 jubao@zcool.com.cn</a>&nbsp;&nbsp;&nbsp;|</li>
+        		<li><a href="#">联系电话010-55555555</a>&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#">Copyright © 2006-2019 ZCOOL站酷</a></li>
+        	</ol>
+        </div>
+		</div>
+	</footer>
+</body>
+</html>
