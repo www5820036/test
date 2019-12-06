@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>响应式站酷</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src='js/jquery-1.11.1.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  	<div class="container">
+    
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" height="30px"></a>
+    	</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      		<ul class="nav navbar-nav my-nav">
+        		<!-- <li class="active"><a href="#">一站式服务 <span class="sr-only">(current)</span></a></li> -->
+            <li><a href="#">首页</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">平面</a></li>
+                  <li><a href="#">UI</a></li>
+                  <li><a href="#">网页</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">精选作品</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">编辑推荐</a></li>
+                </ul>
+            </li>
+        		<li><a href="#">同城</a></li>
+        		<li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">职位<span class="caret"></span></a>
+	          		<ul class="dropdown-menu">
+			            <li><a href="#">职位</a></li>
+			            <li><a href="#">公司</a></li>
+			            <li><a href="#">发布职位</a></li>
+			            
+	          		</ul>
+        		</li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">活动<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">设计大赛</a></li>
+                  <li><a href="#">专题策划</a></li>
+                  <li><a href="#">线上活动</a></li>
+                  <li><a href="#">线下活动</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">素材<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">图片</a></li>
+                  <li><a href="#">素材</a></li>
+                  <li><a href="#">字体</a></li>
+                  
+                  <li><a href="#">音乐</a></li>
+                 
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">课程<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">正在热销</a></li>
+                  <li><a href="#">口碑好课</a></li>                
+                </ul>
+            </li>
+      		</ul>
+      		
+	      	<ul class="nav navbar-nav navbar-right my-btn">
+            <input class="btn btn-danger" type="button" value="发布作品">
+	        	<input class="btn btn-default" type="button" value="登陆">
+				<input class="btn btn-default" type="submit" value="注册">
+				<a class="btn btn-default" href="#" role="button">ENG</a>
+	        	
+	      	</ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 auto">
+        <ul class="lunbo">
+          <li class="col-xs-2 col-md-2" style="padding-left: 0;padding-right: 0;"><img src="images/lunbo1.png@1380w" class="img-responsive" alt=""></li>
+          <li class="col-xs-2 col-md-2" style="padding-left: 0;padding-right: 0;"><img src="images/lunbo2.png@1380w" class="img-responsive" alt=""></li>
+          <li class="col-xs-2 col-md-2" style="padding-left: 0;padding-right: 0;"><img src="images/lunbo3.jpg@1380w" class="img-responsive" alt=""></li>
+          <li class="col-xs-2 col-md-2" style="padding-left: 0;padding-right: 0;"><img src="images/lunbo4.png@1380w" class="img-responsive" alt=""></li>
+          <li class="col-xs-2 col-md-2" style="padding-left: 0;padding-right: 0;"><img src="images/lunbo5.png@1380w" class="img-responsive" alt=""></li>
+          <li class="col-xs-2 col-md-2" style="padding-left: 0;padding-right: 0;"><img src="images/lunbo1.png@1380w" class="img-responsive" alt=""></li>
+        </ul>
+        <span class="left"><</span>
+        <span class="right1">></span>
+
+        <script>
+      var i=$('.auto').width();
+      console.log(i);
+      var n=0
+
+
+       $('.left').click(function(event) {
+      n++;
+      if(n>5){
+        $('.lunbo').css('margin-left', '0px');
+        n=1
+      }
+      $('.lunbo').stop().animate({'margin-left':-n*i+'px'}, 1000);
+      
+    });
+
+       $('.right1').click(function(event) {
+      n--;
+      if(n<0){
+        $('.lunbo').css('margin-left', -5*i+'px');
+        n=4
+      }
+      $('.lunbo').stop().animate({'margin-left':-n*i+'px'}, 1000);
+      
+    });
+               
+           var timer;
+           function go(){
+            clearInterval(timer)
+            timer=setInterval(function(){
+              n++;
+          if(n>5){
+        $('.lunbo').css('margin-left', '0px');
+        n=1
+      }
+      $('.lunbo').stop().animate({'margin-left':-n*i+'px'}, 1000);
+            },2000)
+           }
+           go();
+
+           $('.auto').hover(function() {
+      clearInterval(timer)
+    }, function() {
+      go()
+    });
+    </script>
+
+
+      </div>
+      <div class="col-xs-6 col-md-2 topbox">
+        <li><img src="images/01.jpg" class="img-responsive" 
+           alt=""></li>
+      </div>
+      <div class="col-xs-6 col-md-2 topbox">
+        <li><img src="images/02.jpg" class="img-responsive" 
+           alt=""></li>
+      </div>
+      <div class="col-xs-6 col-md-2 topbox">
+        <li><img src="images/03.jpg" class="img-responsive" 
+           alt=""></li>
+      </div>
+      <div class="col-xs-6 col-md-2 topbox">
+        <li><img src="images/04.jpg" class="img-responsive" 
+           alt=""></li>
+      </div>
+      <div class="col-xs-6 col-md-2 topbox">
+        <li><img src="images/05.jpg" class="img-responsive" 
+           alt=""></li>
+      </div>
+      <div class="col-xs-6 col-md-2 topbox">
+        <li><img src="images/01.jpg" class="img-responsive" 
+           alt=""></li>
+      </div>
+
+      <div class="bottom1">
+      <ul>
+        <li class="li">首页推荐</li>
+        <li class="li">最新发布</li>
+        <li class="li">上升最快</li>
+      </ul>
+    </div>
+
+    <script>
+      var k=$('.bottom1 ul').offset().top
+
+    $(window).scroll(function(event) {
+      var h=$(window).scrollTop()
+      
+      
+      console.log(k)
+
+            if(h>=k){
+              $('.bottom1').css('position', 'fixed');
+            }else{
+              $('.bottom1').css('position', '');
+            }
+    });    
+    </script>
+    </div>
+  </div>
+</div>
+
+
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con25.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con01.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con02.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con03.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con04.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con05.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con06.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con07.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con08.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con09.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con10.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con11.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con12.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con13.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con14.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con15.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con16.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con17.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con18.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      <div class="col-xs-6 li">
+        <a href="#" class="pic"><img src="images/con19.jpg" alt="" width="210px"></a>
+        <p class="tit">陈绽：平凡之物的异样之美</p>
+        <p class="sty">文章-专访-多领域</p>
+
+        <span class="see"><img src="images/eye.svg" alt=""> 8888&nbsp;&nbsp;<img alt="" src="images/discuss.svg"> 100&nbsp;&nbsp;<img alt="" src="images/zan.svg"> 333</span>
+        <hr>
+        <span class="name22">
+          <a href="#" class="name"><img src="images/name.jpg" alt="" width="25px" class="nameimg"> 设计师专访
+          </a>
+          </span>
+        <p class="right">1天前</p>
+      </div>
+      
+      <ol>
+      <li class="n1"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">···</a></li>
+      <li><a href="#">99</a></li>
+      <li><a href="#">100</a></li>
+      <li><a href="#">></a></li>
+    </ol>
+      
+      <div class="bot">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
+              <img src="images/gg.jpg" class="img-responsive" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <div class="kc">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
+              <span class="left">推荐课程</span>
+              <span class="right">换一换</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kcbox">
+        <div class="container">
+          <div class="row">
+            
+        <div class="col-xs-12 kkk">
+          <img src="images/bo1.jpg" alt="" width="210px">
+          <a href="#">版式设计的应用方法</a>
+        </div>
+        <div class="col-xs-12 kkk">
+          <img src="images/bo2.jpg" alt="" width="210px">
+          <a href="#">版式设计的应用方法</a>
+        </div>
+        <div class="col-xs-12 kkk">
+          <img src="images/bo3.jpg" alt="" width="210px">
+          <a href="#">版式设计的应用方法</a>
+        </div>
+        <div class="col-xs-12 kkk">
+          <img src="images/bo4.jpg" alt="" width="210px">
+          <a href="#">版式设计的应用方法</a>
+        </div>
+        <div class="col-xs-12 kkk">
+          <img src="images/bo5.jpg" alt="" width="210px">
+          <a href="#">版式设计的应用方法</a>
+        </div>
+        
+
+        
+    
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="gotop">
+    <img src="images/go.png" alt="">
+  </div>
+     <script>
+      var y=$('.content .kcbox .kkk').offset().top
+       $(window).scroll(function(event) {
+      var h=$(window).scrollTop()
+      console.log(h)
+      console.log(y)
+      if(h>200){
+        $('.gotop').fadeIn()
+      }else{
+        $('.gotop').fadeOut()
+      }
+            
+            if(h>=y){
+              $('.gotop').css('position', 'absolute');
+            }else{
+              $('.gotop').css('position', 'fixed');
+            }
+    });
+
+    $('.gotop').click(function(event) {
+          var h=$(window).scrollTop()
+        if(h>400){
+        $('html,body').animate({'scrollTop':0+'px'},500)
+                }
+          });      
+        
+  </script>
+     </script>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+      <a href="#" class="aa">首页</a>
+      <a href="#" class="aa">博客</a>
+      <span>电邮 : <a href="#" class="ab">8888888@qq.com</a></span>
+      <span>Copyright © 站酷 2014. All Right Reserved</span>
+    </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

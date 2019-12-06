@@ -1,0 +1,65 @@
+{
+  "id": "1521701",
+  "name": "JAVA13",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "978353",
+      "name": "新浪微博",
+      "font_class": "weibo",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "1164884",
+      "name": "向下箭头",
+      "font_class": "xiangxiajiantou",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "1164942",
+      "name": "向下箭头_实心",
+      "font_class": "xiangxiajiantoushixin",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "1301366",
+      "name": "名片",
+      "font_class": "mingpian",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "2681693",
+      "name": "火",
+      "font_class": "huo1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "2794636",
+      "name": "星球",
+      "font_class": "xingqiu",
+      "unicode": "e8e7",
+      "unicode_decimal": 59623
+    },
+    {
+      "icon_id": "5041658",
+      "name": "微信推送",
+      "font_class": "jianzhuanquan-",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "10613966",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    }
+  ]
+}

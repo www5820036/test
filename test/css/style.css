@@ -1,0 +1,136 @@
+/*
+* @Author: Administrator
+* @Date:   2018-05-24 15:04:16
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-05-25 15:23:02
+*/
+.navbar-brand .logo-beta{
+	position: relative;
+	top: -40px;
+	left: 170px;
+}
+.dropdown-menu .icon{
+	margin-right: 5px;
+}
+.dropdown-menu .childLi{
+	padding-left: 20px;
+}
+@media (min-width: 768px){
+	.navbar-nav{
+		float: right;
+	}
+}
+.navbar-nav .btn{
+	margin: 10px;
+	padding: 10px 20px;
+}
+.navbar-nav>li{
+	margin: 10px;
+}
+.navbar-default{
+	margin-bottom: 0px;
+}
+.banner{
+	background: url('../images/intro-bg_ny5.png') top center no-repeat;
+	background-size: cover;
+}
+.padd{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.banner h1{
+	font-size: 80px;
+	font-weight: 600;
+	color: tomato;
+	font-family: '微软雅黑';
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.con-bg{
+	background: #f2f4f8;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 40px 0px;
+}
+.part2 h2{
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.part2 .lead a{
+	color: #d94a26;
+	font-size: 18px;
+	text-decoration: none;
+}
+.part3 .thumbnail{
+	border: none;
+}
+.part3 .thumbnail .glyphicon{
+	font-size: 55px;
+}
+.search .btn{
+	padding: 10px 40px;
+}
+.search .glyphicon::before{
+	content: '\e131';	
+	color: #fff;
+}
+.fa{
+	background:#fff;
+	border: none;
+}
+.fa .btn{
+	padding: 10px 40px;
+}
+
+.team{
+	background: url('../images/banner3.png') top center no-repeat;
+	background-size: cover;
+	padding: 40px 0px;
+}
+.team .caption p{
+	font-size: 18px;
+	color: #333;
+	font-family: '微软雅黑';
+	line-height: 34px;
+}
+.per .thumbnail{
+	border: none;
+}
+
+.per .caption a{
+	color:#777;
+}
+.per .caption a:hover{
+	text-decoration: none;
+}
+.foot p{
+	font-size: 16px;
+}
+.foot p a{
+	padding-right: 10px;
+	color: tomato;
+}
+.foot p a:hover{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
